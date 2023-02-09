@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>全局组件 | 项目中台-前端文档</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="项目中台-前端文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.71b3e9f3.css" as="style"><link rel="preload" href="/assets/js/app.cc39bd23.js" as="script"><link rel="preload" href="/assets/js/2.6e23c5ac.js" as="script"><link rel="preload" href="/assets/js/7.c819b28e.js" as="script"><link rel="prefetch" href="/assets/js/10.e73e0a13.js"><link rel="prefetch" href="/assets/js/11.5c813cd4.js"><link rel="prefetch" href="/assets/js/3.c0e55a43.js"><link rel="prefetch" href="/assets/js/4.749358fb.js"><link rel="prefetch" href="/assets/js/5.cac8bb09.js"><link rel="prefetch" href="/assets/js/6.5b29019d.js"><link rel="prefetch" href="/assets/js/8.3d2dd25c.js"><link rel="prefetch" href="/assets/js/9.9577536e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.71b3e9f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://excalidraw.com/apple-touch-icon.png" alt="项目中台-前端文档" class="logo"> <span class="site-name can-hide">项目中台-前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/Introduce/" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/ComponentPage/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="模块" class="dropdown-title"><span class="title">模块</span> <span class="arrow down"></span></button> <button type="button" aria-label="模块" class="mobile-dropdown-title"><span class="title">模块</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Module/Home/" class="nav-link">
+  统计中心
+</a></li><li class="dropdown-item"><!----> <a href="/Module/Commercial/" class="nav-link">
+  商务数据
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/Introduce/" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/ComponentPage/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="模块" class="dropdown-title"><span class="title">模块</span> <span class="arrow down"></span></button> <button type="button" aria-label="模块" class="mobile-dropdown-title"><span class="title">模块</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Module/Home/" class="nav-link">
+  统计中心
+</a></li><li class="dropdown-item"><!----> <a href="/Module/Commercial/" class="nav-link">
+  商务数据
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>全局组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ComponentPage/#一、select-customize-new" class="sidebar-link">一、select-customize-new</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="全局组件"><a href="#全局组件" class="header-anchor">#</a> 全局组件</h1> <h2 id="一、select-customize-new"><a href="#一、select-customize-new" class="header-anchor">#</a> 一、select-customize-new</h2> <p>组件说明：此组件基于element-ui 中的el-select 进行了封装，主要功能有可以实现前端搜索，分页加载，自定义显示内容等；主要根据业务需求开发；
+<br>
+和【select-customize】组件不同的是新版新增了可以自定义绑定key，可以自定义输出的字段，新的props参数如下</p> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token comment">// 组件默认接收的参数</span>
+    <span class="token literal-property property">selectOptionSet</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span>  <span class="token comment">// 唯一标识</span>
+          <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">&quot;title&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 显示的label</span>
+          <span class="token literal-property property">outputField</span><span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token comment">// 输出的字段名称  就是在双向绑定的时候接收的值可以进行指定字段；比如在这里指定的是id就接收的id  ，指定title就接收title ;接收的值是一个一维数组</span>
+          <span class="token literal-property property">checkAllNumber</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span> <span class="token comment">// 全选条数，默认2000，如果为0表示不限制</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>在页面中调用，需引入注册，需要注意的是在这里绑定需要使用 :value.sync， 传入的value是一个对象</p> <div class="language-js extra-class"><pre class="language-js"><code>   <span class="token operator">&lt;</span>SelectCustomizeNew multipleFlag 
+    <span class="token operator">:</span>data<span class="token operator">=</span><span class="token string">&quot;channel_id&quot;</span> @change<span class="token operator">=</span><span class="token string">&quot;getChannelId&quot;</span>
+      <span class="token operator">:</span>value<span class="token punctuation">.</span>sync<span class="token operator">=</span><span class="token string">&quot;searchForm.channel&quot;</span>
+      <span class="token operator">:</span>selectOptionSet<span class="token operator">=</span><span class="token string">&quot;{ key: 'id', label: 'title', outputField: 'id',checkAllNumber:0}&quot;</span>
+      ref<span class="token operator">=</span><span class="token string">&quot;channelId&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><p><span style="color:red;">*</span> 必须要有appInfo和appInfoKey这两个字段 ， appInfo 在组件中存储输出的值；appInfoKey主要来存储输入的值，作为回显，如果有默认值的话需要把默认值push到appInfoKey字段中来进行回显；如果把默认值赋值到appInfo中可能回显不会生效；组件接收value的值如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">searchForm</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">channel</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">appInfo</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  
+        <span class="token literal-property property">appInfoKey</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>截图如下
+<img src="/imgs/1.png"></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cc39bd23.js" defer></script><script src="/assets/js/2.6e23c5ac.js" defer></script><script src="/assets/js/7.c819b28e.js" defer></script>
+  </body>
+</html>
